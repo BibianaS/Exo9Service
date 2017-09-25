@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5C62789C-C900-48E3-AF13-8CF4D6276E7B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Exo9</RootNamespace>
+    <AssemblyName>Exo9</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publier\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CtrlNouveauStagiaire.cs" />
+    <Compile Include="CtrlListerStagiairesSection.cs" />
+    <Compile Include="CtrlVisuModifStagiaire.cs" />
+    <Compile Include="Donnees.cs" />
+    <Compile Include="frmAjoutStagiaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAjoutStagiaire.designer.cs">
+      <DependentUpon>frmAjoutStagiaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExo9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExo9.designer.cs">
+      <DependentUpon>frmExo9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMDI.designer.cs">
+      <DependentUpon>frmMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaisieNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSaisieNote.designer.cs">
+      <DependentUpon>frmSaisieNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStagiaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStagiaire.designer.cs">
+      <DependentUpon>frmStagiaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVisuStagiaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVisuStagiaire.designer.cs">
+      <DependentUpon>frmVisuStagiaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Outils.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAjoutStagiaire.resx">
+      <DependentUpon>frmAjoutStagiaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExo9.resx">
+      <DependentUpon>frmExo9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMDI.resx">
+      <DependentUpon>frmMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSaisieNote.resx">
+      <DependentUpon>frmSaisieNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStagiaire.resx">
+      <DependentUpon>frmStagiaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVisuStagiaire.resx">
+      <DependentUpon>frmVisuStagiaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="ClassDiagramPrésentationCtrl.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassesDAO\ClassesDAO.csproj">
+      <Project>{E3EFDF51-4789-4347-88EF-84716651BEF6}</Project>
+      <Name>ClassesDAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\classesMetier\classesMetier.csproj">
+      <Project>{E99DAEC8-8E5E-4CFB-A730-FCC6CD8CD849}</Project>
+      <Name>classesMetier</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

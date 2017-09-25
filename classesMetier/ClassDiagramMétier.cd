@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Diagramme de classes Métier Exo9MetierDLL">
+    <Position X="7.677" Y="6.292" Height="0.51" Width="1.7" />
+  </Comment>
+  <Comment CommentText="MSections gère en privé une collection d'objets MSection">
+    <Position X="7.844" Y="1.188" Height="0.438" Width="1.7" />
+  </Comment>
+  <Comment CommentText="MSection gère en privé une collection d'objets MStagiaire">
+    <Position X="5.781" Y="3.354" Height="0.438" Width="1.7" />
+  </Comment>
+  <Class Name="Exo9.MSections">
+    <Position X="6" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAABAAAAAgEAAAAAAAAQAAAAAAAAAAAAAACAAAgA=</HashCode>
+      <FileName>MSections.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="lesSections" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Exo9.MStagiaire">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAoQREgAAAAAEAAAABAAAECUAAAAQACQQAAAEAAI=</HashCode>
+      <FileName>MStagiaire.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Exo9.MStagiaireCIF">
+    <Position X="5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAgAAAAAAAAAAAAAAAAAAAAABAAAAAQ=</HashCode>
+      <FileName>MStagiaireCIF.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Exo9.MStagiaireDE">
+    <Position X="1" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAA=</HashCode>
+      <FileName>MStagiaireDE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Exo9.MSection">
+    <Position X="10" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQABAAgAAgkAAAAAAgAFAAMQAAAAAAIAAAABAAEA=</HashCode>
+      <FileName>MSection.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="lesStagiaires" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

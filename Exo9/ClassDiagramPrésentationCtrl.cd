@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Exo9.CtrlListerStagiairesSection">
+    <Position X="1" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABCAAQIAAAAAAAAAAAQAAAAgAAAA=</HashCode>
+      <FileName>CtrlListerStagiairesSection.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="laSection" />
+      <Field Name="leForm" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Exo9.CtrlAjouterStagiaire">
+    <Position X="4.5" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAgAAAAAACAAAIAAAAACAAAAAwAAAAAAAAA=</HashCode>
+      <FileName>CtrlAjouterStagiaire.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="laSection" />
+      <Field Name="leForm" />
+      <Field Name="leStagiaire" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Exo9.CtrlVisuModifStagiaire">
+    <Position X="7" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAIAAACAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>CtrlVisuModifStagiaire.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="leForm" />
+      <Field Name="leStagiaire" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Exo9.frmVisuStagiaire" Collapsed="true">
+    <Position X="10" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAACQBABAABACAgAACAEACAQQIAAAABAgAAoA=</HashCode>
+      <FileName>frmVisuStagiaire.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Exo9.MStagiaire" Collapsed="true">
+    <Position X="10.5" Y="2.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Exo9.MSection" Collapsed="true">
+    <Position X="4.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Exo9.frmExo9" Collapsed="true">
+    <Position X="4.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAACAAIgABADCAAAACAAAAEAAAEAAAAAAAAIA=</HashCode>
+      <FileName>frmExo9.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Exo9.frmAjoutStagiaire" Collapsed="true">
+    <Position X="7.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACIBAAAAACSAgQgHAACAAEAABiAEBAgAAAg=</HashCode>
+      <FileName>frmAjoutStagiaire.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
